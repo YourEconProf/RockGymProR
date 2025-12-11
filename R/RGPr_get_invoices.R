@@ -12,7 +12,6 @@
 #' @return all_customers a tibble
 #'
 #' @importFrom DBI dbConnect
-#' @importFrom RMySQL MySQL
 #' @import magrittr
 #' @importFrom dplyr tbl select filter mutate collect
 #' @importFrom tibble as_tibble

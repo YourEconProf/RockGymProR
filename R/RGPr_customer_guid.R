@@ -7,7 +7,6 @@
 #' @return a tibble containing GUID and CUSTOMER_ID for the current facility
 #'
 #' @importFrom DBI dbConnect
-#' @importFrom RMySQL MySQL
 #' @import magrittr
 #' @importFrom dplyr tbl select collect
 #' @importFrom tibble as_tibble
@@ -21,5 +20,6 @@ RGPr_customer_guid <- function(RGPconn=NULL){
     select(CUSTOMER_ID,GUID) %>%
     collect() %>%
     as_tibble()
+
 
 }
