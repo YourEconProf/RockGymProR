@@ -9,9 +9,6 @@
 #'
 #' @return dbRGP
 #'
-#' @importFrom DBI dbConnect
-#' @importFrom RMySQL MySQL
-#'
 #' @export
 
 RGPr_open_conn <- function(address=NULL,
